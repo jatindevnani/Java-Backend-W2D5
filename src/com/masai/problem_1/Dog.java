@@ -1,4 +1,4 @@
-package com.masai.Problem_1.Abstract_Class_Assignment;
+package com.masai.problem_1;
 
 public class Dog extends Animal {
     @Override
