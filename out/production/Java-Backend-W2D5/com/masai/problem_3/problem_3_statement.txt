@@ -1,0 +1,54 @@
+Java Interface Assignment:
+Create an interface Hotel with the following 2 methods:
+void chickenBiryani();
+void masalaDosa();
+Create following 2 concrete implemented classes of the above Hotel interface
+1. TajHotel
+2. RoadSideHotel
+Override both methods inside both class as follows:
+In TajHotel:
+public void chickenBiryani(){
+System.out.println("Biryani from Taj Hotel");
+}
+public void masalaDosa(){
+System.out.println("MasalaDosa from Taj Hotel");
+}
+In RoadSideHotel:
+public void chickenBiryani(){
+System.out.println("Biryani from Road Side Hotel");
+}
+public void masalaDosa(){
+System.out.println("MasalaDosa from Road Side Hotel");
+}
+Inside the TajHotel class define one another specific method :
+Java Interface Assignment: 2
+public void welcomeDrink(){
+System.out.println("Welcome Drink from the TajHotel");
+}
+Create a separate class Main with the main method as follows and complete the
+commented functionalities.
+public class Main{
+public Hotel provideFood(int amount){
+//write the logic if the supplied amount is more than 1000
+//then return the object of TajHotel class
+//if the supplied amount is greater than 200 and less than 1000
+//then return the object of RoadSideHotel class
+//otherwise return the null value.
+}
+public static void main(String[] args){
+//creat the object of the Main class
+//Create the Scanner class object to take the amount from the user
+//prompt the user to take the amount from the user
+//call the provideFood method on the Main class object by supplying the amount
+//Based on the returned Hotel object call the methods:
+//if the returned object is RoadSideHotel then call the following methods:
+chickenBiryani();
+masalaDosa();
+//if the returned object is TajHotel then call the following methods:
+welcomeDrink();
+chickenBiryani();
+masalaDosa();
+//if the returned value is null then show the following message:
+Please Enter a valid amount.
+}
+}
